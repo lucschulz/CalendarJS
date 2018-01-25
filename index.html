@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="functions.js"></script>
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              setTheYear();              
+          }, false);
+      </script>
+    <title>lucschulz.ca - Calendar Creator JS</title>
+  </head>
+  
+  <body>
+    <div id="page-header">
+ 
+      Select a month:<BR />
+      <select class="fonts" id="theMonth">
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+      </select>
+      <p>
+          Enter a year:<br />
+          <input class="fonts" type="number" id="theYear" width="40px" />
+      </p>
+      <p>
+          <button class="fonts" onclick="showDateName()">
+              Print Month
+          </button>
+
+          <button class="fonts" onclick="resetThePage()">
+              Reset
+          </button>
+      </p>
+
+      <p id="firstDayOfMonth"></p>
+</div>
+      <table>
+
+          <tr id="headers">
+              <th class="weekends">Sunday</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th class="weekends">Saturday</th>
+          </tr>
+
+          <tr class="calendarBody" id="week1">
+              <td id="0" class="weekends"></td>
+              <td id="1" class="mondays"></td>
+              <td id="2" class="tuesdays"></td>
+              <td id="3" class="wednesdays"></td>
+              <td id="4" class="thursdays"></td>
+              <td id="5" class="fridays"></td>
+              <td id="6" class="weekends"></td>
+          </tr>
+
+          <tr class="calendarBody" id="week2">
+              <td class="weekends"></td>
+              <td class="mondays"></td>
+              <td class="tuesdays"></td>
+              <td class="wednesdays"></td>
+              <td class="thursdays"></td>
+              <td class="fridays"></td>
+              <td class="weekends"></td>
+          </tr>
+
+          <tr class="calendarBody" id="week3">
+              <td class="weekends"></td>
+              <td class="mondays"></td>
+              <td class="tuesdays"></td>
+              <td class="wednesdays"></td>
+              <td class="thursdays"></td>
+              <td class="fridays"></td>
+              <td class="weekends"></td>
+          </tr>
+
+          <tr class="calendarBody" id="week4">
+              <td class="weekends"></td>
+              <td class="mondays"></td>
+              <td class="tuesdays"></td>
+              <td class="wednesdays"></td>
+              <td class="thursdays"></td>
+              <td class="fridays"></td>
+              <td class="weekends"></td>
+          </tr>
+
+          <tr class="calendarBody" id="week5">
+              <td class="weekends"></td>
+              <td class="mondays"></td>
+              <td class="tuesdays"></td>
+              <td class="wednesdays"></td>
+              <td class="thursdays"></td>
+              <td class="fridays"></td>
+              <td class="weekends"></td>
+          </tr>
+
+          <tr class="calendarBody" id="week6">
+              <td class="weekends"></td>
+              <td class="mondays"></td>
+              <td class="tuesdays"></td>
+              <td class="wednesdays"></td>
+              <td class="thursdays"></td>
+              <td class="fridays"></td>
+              <td id="demo" class="weekends"></td>
+          </tr>
+
+      </table>
+
+  </body>
+
+
+</html>

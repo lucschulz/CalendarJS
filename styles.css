@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-style: solid;
+  border-width: thick;
+  border-color: black;
+}
+
+th {
+  font-size: 1.8em;
+  width: 14%;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+}
+
+td {
+  height: 80pt;
+  vertical-align: text-top;
+}
+
+.weekends {
+  background-color: deepskyblue;
+}
+
+.calendarBody {
+  height: 35px;
+  text-align: right;
+  font-weight: bold;
+  background: lightgray;
+}
+
+.fonts {
+  font-family: Arial;
+} 
+#page-header {
+  font-family: Arial
+}
+#headers {
+  background-color: lightgray;
+}
+input {
+  background-color: white;
+} 
